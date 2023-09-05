@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body{
+    background-color: #F5F6F8;
+    font-size: 100%;
+    background-color: #0f0f0f;
+}
+
+.container{
+    width: 98%;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+
+
+header{
+    width: 100%;
+    padding: 20px 0;
+}
+
+header .container nav{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav > .left-portion{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+nav > .left-portion .menu-bar{
+    width: 10%;
+    min-width: 30px;
+    font-size: 1.5em;
+    color: #fff;
+
+}
+nav > .left-portion .main-logo-container{
+    width: 25%;
+    height: 70%;
+}
+
+
+
+
+nav > .mid-portion{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 0;
+    
+}
+
+nav > .mid-portion .search-bar{
+    width: calc(100% - 50px);
+    
+    
+}
+nav > .mid-portion .search-bar form{
+    width: 100%;
+    overflow: hidden;
+    background-color: #303030;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 1px;
+}
+nav > .mid-portion .search-bar form input{
+    font-size: 1rem;
+    padding: 15px;
+    width: 87%;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #0f0f0f;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: inline-block;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+nav > .mid-portion .search-bar form button{
+    width: 10%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #303030;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+nav > .mid-portion .speaker-bar{
+    padding: 15px 0;
+}
+nav > .mid-portion .speaker-bar span{
+    padding: 15px;
+    background-color: #303030;
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+
+nav > .right-portion{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+nav > .right-portion button{
+    width: 10%;
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+
+nav > .right-portion button:last-child{
+    text-align: right;
+}
+nav > .right-portion button .profile-img-container{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+main{
+    width: 100%;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu{
+    width: 15%;
+    height: calc(100vh - 105px);
+    box-sizing: border-box;
+    padding-right: 20px;
+    overflow: scroll;
+
+}
+
+.menu::-webkit-scrollbar{
+    width: 10px;
+}
+.menu::-webkit-scrollbar-thumb{
+    height: 400px;
+    background-color: #717171;
+    border-radius: 25px;
+
+}
+
+
+.menu > ul{
+    padding: 20px 0;
+    border-bottom: 1px solid #717171;
+}
+.menu > ul li{
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+.menu > ul li:hover{
+    background-color: #ffffff6e;
+}
+.menu > ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff; 
+    font-size: 1.2rem;
+}
+.menu > ul li a span:first-child{
+    margin-right: 20px;
+}
+
+
+.menu > ul:nth-child(3) li a span:first-child{
+    margin-right: 20px;
+    display: inline-block;
+    height: 30px;
+    width: 40px;
+}
+.menu > ul:nth-child(3) li a span:last-child{
+    display: inline-block;
+    line-height: 40px;
+}
+.menu > ul:nth-child(3) li:first-child a span:first-child{
+    display: none;
+}
+
+.menu > .menu-footer{
+    padding: 10px 0;
+}
+.menu > .menu-footer p{
+    color: #717171;
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+.menu > .menu-footer p:last-child{
+    color: #303030;
+}
+
+
+
+
+
+
+
+
+.content{
+    width: 85%;
+    height: calc(100vh - 105px);
+    box-sizing: border-box;
+    overflow: scroll;
+}
+.content::-webkit-scrollbar{
+    width: 10px;
+}
+.content::-webkit-scrollbar-thumb{
+    height: 100px;
+    background-color: #717171;
+    border-radius: 25px;
+
+}
+
+.content .content-container{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.content .content-container .item-link{
+    display: block;
+    min-width: 300px;
+    width: 24%;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.content .content-container .item-link .item-card{
+    width: 100%;
+}
+.content .content-container .item-link .item-card .item-video-holder{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.content .content-container .item-link .item-card .item-desc{
+    width: 100%;
+    position: relative;
+    padding: 5px 5px 5px 50px;
+    box-sizing: border-box;
+}
+.content .content-container .item-link .item-card .item-desc .item-user-profile{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 0;
+}
+.content .content-container .item-link .item-card .item-desc .item-title{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+.content .content-container .item-link .item-card .item-desc .item-channel,
+.content .content-container .item-link .item-card .item-desc .item-meta{
+    font-size: 1rem;
+    color: #717171;
+}
+.content .content-container .item-link .item-card .item-desc .item-channel:hover{
+    color: #fff;
+}
+.content .content-container .item-link .item-card .item-desc .dot-bar{
+    color: #fff;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 1.5rem;
+}
+.content .content-container .item-link .item-card .item-desc:hover .dot-bar{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1199px){
+    nav > .left-portion .menu-bar{
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 949px){
+    nav > .left-portion .menu-bar{
+        font-size: .8em;
+        padding: 5px 0;
+        min-width: 20px;
+    }
+
+    nav > .left-portion .main-logo-container{
+        width: 25%;
+        height: 50%;
+    }
+}
+
+
+
